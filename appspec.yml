@@ -14,4 +14,4 @@ hooks:
         timeout: 10
     ApplicationStart:
       - location: deploy-scripts/application_start.sh
-        timeout: 10
+        timeout: 60
