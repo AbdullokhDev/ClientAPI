@@ -2,8 +2,8 @@
 Description=Start the Website
 
 [Service]
-WorkingDirectory=/var/www/
-ExecStart=/usr/bin/dotnet /var/www/Client.dll
+WorkingDirectory=/home/ubuntu/
+ExecStart=/usr/bin/dotnet /home/ubuntu/build/Client.dll
 Restart=always
 RestartSec=10
 KillSignal=SIGINT
