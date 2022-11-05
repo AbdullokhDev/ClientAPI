@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files:
+  - source: .
+    destination: /var/www
+  - source: deploy-scripts/website.service
+    destination: /etc/systemd/system
+hooks:
+    ApplicationStop:
+      - location: deploy-scripts/application_stop.sh
+        timeout: 10
+    BeforeInstall:
+      - location: deploy-scripts/before-install.sh
+        timeout: 10
+    ApplicationStart:
+      - location: deploy-scripts/application_start.sh
+        timeout: 10
