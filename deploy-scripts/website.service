@@ -2,7 +2,7 @@
 Description=Start the Website
 
 [Service]
-WorkingDirectory=/home/ubuntu/
+WorkingDirectory=/home/ubuntu/app/
 ExecStart=/usr/bin/dotnet /home/ubuntu/build/Client.dll
 Restart=always
 RestartSec=10
