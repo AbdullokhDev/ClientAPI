@@ -22,6 +22,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Welcome endpoint
+app.MapGet("/", () => "Welcome to Clients API!");
+
 // Create new client
 app.MapPost("/clients/", async(Klient n, ClientDb db)=> {
     db.Clients.Add(n);
