@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Welcome endpoint
-app.MapGet("/", () => "Welcome to Clients API!");
+app.MapGet("/", () => "Welcome to ClientAPI project!");
 
 // Create new client
 app.MapPost("/clients/", async(Klient n, ClientDb db)=> {
