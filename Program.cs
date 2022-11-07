@@ -16,11 +16,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-  //  app.UseSwagger();
-    //app.UseSwaggerUI();
-//}
+app.UseSwagger(); 
+app.UseSwaggerUI();
 
 // Welcome endpoint
 app.MapGet("/", () => "Welcome to ClientAPI project!");
