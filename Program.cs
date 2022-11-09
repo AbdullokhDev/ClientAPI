@@ -20,7 +20,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 // Welcome endpoint
-app.MapGet("/", () => "Welcome to ClientAPI project!");
+app.MapGet("/", () => "smth");
 
 // Create new client
 app.MapPost("/clients/", async(Klient n, ClientDb db)=> {
